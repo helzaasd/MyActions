@@ -19,7 +19,7 @@ sazs34对任何脚本问题概不负责，包括但不限于由任何脚本错�
 
 
 ![sazs34’s github stats](https://github-readme-stats.vercel.app/api?username=sazs34&show_icons=true&theme=vue)
-
+2020年12月17日21:14:21
 # MyActions
 
 ### 本项目已可以实现自动同步上游更改！[具体点击](#自动同步)
@@ -40,7 +40,7 @@ sazs34对任何脚本问题概不负责，包括但不限于由任何脚本错�
 
 3. **必须** - 请随便找个文件(例如`README.md`)，加个空格提交一下，否则可能会出现无法定时执行的问题
 
-目前已支持[@NobyDa](https://github.com/NobyDa) 以及[@lxk0301](https://github.com/lxk0301) 中京东签到的内容,优点是支持无限数量的京东cookie
+目前已支持[@NobyDa](https://github.com/NobyDa) 以及[@lxk0301](https://github.com/lxk0301) 中签到的内容,优点是支持无限数量的cookie
 
 已支持[@Zero-S1](https://github.com/Zero-S1/xmly_speed)大佬的喜马拉雅极速版签到
 
@@ -63,11 +63,11 @@ FORK后，如果actions没有定时执行，请随便找个文件，加个空格
 
 ### Secrets全集合
 
-#### 京东专用
+#### 专用
 
 | Name                    |   归属   | 属性   | 说明                                                         |
 | ----------------------- | :------: | ------ | ------------------------------------------------------------ |
-| `JD_COOKIE`             |   京东   | 必须   | 京东cookie,具体获取参考[lxk0301的获取教程](https://github.com/lxk0301/scripts/blob/master/githubAction.md#%E4%BA%AC%E4%B8%9Ccookie)或[点击直达](#Cookie获取和配置) |
+| `JD_COOKIE`             |      | 必须   | cookie,具体获取参考[lxk0301的获取教程](https://github.com/lxk0301/scripts/blob/master/githubAction.md#%E4%BA%AC%E4%B8%9Ccookie)或[点击直达](#Cookie获取和配置) |
 | `JD_DEBUG`              |   脚本打印log   | 非必须   | 运行脚本时，是否显示log,默认显示。改成false表示不显示，注重隐私的人可以在设置secret -> `Name:JD_DEBUG,Value:false` |
 
 ##### 互助码系列
@@ -105,8 +105,8 @@ FORK后，如果actions没有定时执行，请随便找个文件，加个空格
 | `TG_USER_ID`            |   推送   | 非必须 | tg推送,填写[@getuseridbot](https://t.me/getuseridbot)中获取到的纯数字ID，[关于TG推送的说明](#关于TG推送的说明) |
 | `DD_BOT_TOKEN`          |   钉钉推送   | 非必须 | 钉钉推送[官方文档](https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq) ,只需`https://oapi.dingtalk.com/robot/send?access_token=XXX` 等于符号后面的XXX， 注：如果钉钉推送只填写`DD_BOT_TOKEN`，那么安全设置需勾选`自定义关键词`，内容输入输入`账号`即可，其他安全设置不要勾选 |
 | `DD_BOT_SECRET`         |   钉钉推送   | 非必须 | 密钥，机器人安全设置页面，加签一栏下面显示的SEC开头的字符串,填写了`DD_BOT_TOKEN`和`DD_BOT_SECRET`，钉钉机器人安全设置只需勾选`加签`即可，其他选项不要勾选 |
-| `PET_NOTIFY_CONTROL`    | 东东萌宠推送开关  | 非必须 | 控制京东萌宠是否静默运行,`false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)              |
-| `FRUIT_NOTIFY_CONTROL`  | 东东农场推送开关  | 非必须 | 控制京东农场是否静默运行,`false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)              |
+| `PET_NOTIFY_CONTROL`    | 东东萌宠推送开关  | 非必须 | 控制萌宠是否静默运行,`false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)              |
+| `FRUIT_NOTIFY_CONTROL`  | 东东农场推送开关  | 非必须 | 控制农场是否静默运行,`false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)              |
 | `JD_JOY_REWARD_NOTIFY`  | 宠汪汪兑换京豆推送开关  | 非必须 | 控制jd_joy_reward.js脚本是否静默运行,`false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)              |
 | `MARKET_REWARD_NOTIFY`  | 京小超兑换奖品推送开关  | 非必须 | 控制jd_blueCoin.js兑换奖品成功后是否静默运行, `false`为否(发送推送通知消息),`true`为是(即：不发送推送通知消息)             |
 
@@ -168,13 +168,13 @@ FORK后，如果actions没有定时执行，请随便找个文件，加个空格
 
 ```
 
-针对京东cookie我们只需要
+针对cookie我们只需要
 pt_key=****;
 和
 pt_pin=***;
 的部分
 
-我有两个京东账号,则我JD_COOKIE里面要填写的内容为
+我有两个账号,则我JD_COOKIE里面要填写的内容为
 pt_key=****;pt_pin=***;&pt_key=****;pt_pin=***;
 ```
 
@@ -204,8 +204,8 @@ pt_key=****;pt_pin=***;&pt_key=****;pt_pin=***;
 
 ## 鸣谢
 
-[@NobyDa](https://github.com/NobyDa) - 京东每日签到
+[@NobyDa](https://github.com/NobyDa) - 每日签到
 
-[@lxk0301](https://github.com/lxk0301)  - 京东系列其他签到
+[@lxk0301](https://github.com/lxk0301)  - 系列其他签到
 
 [@Zero-S1](https://github.com/Zero-S1/xmly_speed) - 喜马拉雅极速版签到
